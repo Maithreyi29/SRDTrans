@@ -213,7 +213,7 @@ def train_preprocess_lessMemoryMulStacks(args):
         gap_t = get_gap_t(args, noise_im, stack_num)
 
 
-        assert gap_y >= 0 and gap_x >= 0 and gap_t >= 0, "The gap size for training is negative! Please use smaller '--patch_xyt', or larger '--overlap_factor', or pad your data in the shortest dimension."
+        assert gap_y >= 0 and gap_x >= 0 and gap_t >= 0, "The gap size for training is negative! Please use smaller '--patch_xyt', especially smaller '--patch_t'."
         # args.gap_t = gap_t
         # print('gap_t -----> ', gap_t)
         # print('gap_x -----> ', gap_x)
